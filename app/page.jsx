@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BookCard from "@/components/BookCard";
 import books from "@/data/books.json";
+import Marquee from "@/components/Marquee";
 
 export const metadata = {
   title: "BookVault – Find Your Next Read",
@@ -141,8 +142,6 @@ export default function HomePage() {
               Join Free
             </Link>
           </div>
-
-          
           <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             {stats.map((s) => (
               <div key={s.label} className="glass rounded-2xl p-4 text-center">
@@ -157,7 +156,7 @@ export default function HomePage() {
         
        
       </section>
-
+<Marquee/>
       
       
 
