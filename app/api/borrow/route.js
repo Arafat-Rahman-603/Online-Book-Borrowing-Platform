@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+export const dynamic = "force-dynamic";
 import { auth } from "@/lib/auth";
 import connectDB from "@/lib/mongodb";
 import BorrowRecord from "@/models/BorrowRecord";
